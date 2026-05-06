@@ -339,6 +339,17 @@ input[type="checkbox"]{
 <label>Salida</label>
 <input type="datetime-local" id="salida" oninput="validarFechas(); update()" onchange="validarFechas(); update()">
 <div id="errorSalida" style="color:#d9534f; font-size:12px; margin-top:-10px; margin-bottom:10px;"></div>
+
+<label>Número de perros</label>
+<div class="counter">
+  <button onclick="change(-1)">−</button>
+  <span id="num">1</span>
+  <button onclick="change(1)">+</button>
+</div>
+
+<p style="font-size:12px; color:#8c8c8c; margin-top:-10px;">
+Si tienes más de un peludo, podrás contarnos detalles por WhatsApp 🐾
+</p>
   
 </div>
   
@@ -400,17 +411,6 @@ input[type="checkbox"]{
   </div>
   <div id="errorEsterilizado" class="error-text"></div>
 </div>
-
-  <label>Número de perros</label>
-  <div class="counter">
-    <button onclick="change(-1)">−</button>
-    <span id="num">1</span>
-    <button onclick="change(1)">+</button>
-  </div>
-
-  <p style="font-size:12px; color:#8c8c8c; margin-top:-10px;">
-Si tienes más de un peludo, podrás contarnos detalles por WhatsApp 🐾
-</p>
 
   <label>Sociabilidad</label>
   <div class="pills">
